@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    border: 0px;
+    
+}
+:root{
+    --celeste:#04beef;
+    --rosa: #ffbed4;
+    --rosaDegradado: radial-gradient(circle, rgba(228,114,178,1) 0%, rgba(255,190,212,1) 100%);
+    --azulDegradado: radial-gradient(circle, rgba(15,150,210,1) 0%, rgba(2,202,255,1) 100%);
+}
+
+
+#container{
+    background-image: url(./imagen_2022-11-14_003647378-removebg-preview.png);
+
+
+
+}
+#div1{
+    position: absolute;
+    background: radial-gradient(circle, rgba(15,150,210,1) 0%, rgba(2,202,255,1) 100%);
+    width: 50vw;
+    height: 100vh;
+    float: left;
+
+    transition: 1s all;
+    
+
+
+}
+#div2{
+    width: 50vw;
+    height: 100vh;
+    float: right;
+    background: radial-gradient(circle, rgba(228,114,178,1) 0%, rgba(255,190,212,1) 100%);
+
+    transition: 1s all;
+}
+#headset{
+    position: absolute;
+    width: 40%;
+    margin-inline: 30%;
+    z-index: 3;
+ 
+}
+
+h1{
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.927);
+    margin-inline: 19%;
+    white-space: nowrap;
+    letter-spacing: 30px;
+    vertical-align: middle;
+    font-family: "Impact", Times, serif;
+    margin-top: 5%;
+    word-spacing: 500px;
+    z-index: 3;
+    
+}
+
+.background{
+    position: absolute;
+    opacity: 40%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    
+    animation-duration: 10s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+
+    25%{
+       
+    }
+    50%{
+        
+        transform:rotateX(60deg);
+        
+    }
+}
+
+
+
+#descripcion1{
+    color: rgba(13, 13, 13, 0.603);
+    position:absolute;
+    width: 350px;
+    margin-top: 12%;
+    margin-inline: 13%;
+    font-family: "Impact", Times, serif;
+    z-index: 3;
+    text-shadow: -3px 3px 1px rgb(0, 128, 240);
+    
+}
+
+#descripcion1 h2{
+    margin-top: 0;
+    
+    font-size: 50px;
+    text-align: center;
+    z-index: 3;
+
+
+
+    vertical-align: middle;
+    
+    margin-top: 5%;
+   
+}
+#descripcion1 p{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    
+    color: rgba(255, 255, 255, 0.782);
+    z-index: 3
+    
+    
+}
+
+#descripcion2{
+    color: rgba(13, 13, 13, 0.603);
+    position:absolute;
+    width: 350px;
+    margin-top: 12%;
+    margin-inline: 72%;
+    font-family: "Impact", Times, serif;
+    z-index: 3;
+    text-shadow: -3px 3px 1px rgb(217, 60, 159);
+    
+}
+
+#descripcion2 h2{
+    margin-top: 0;
+    
+    font-size: 50px;
+    text-align: center;
+    z-index: 3;
+
+
+
+    vertical-align: middle;
+    
+    margin-top: 5%;
+   
+}
+#descripcion2 p{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    
+    color: rgba(255, 255, 255, 0.782);
+    z-index: 3
+    
+    
+}
+
+#cyanBtn{
+    position: absolute;
+    box-shadow: -3px 3px 5px rgb(255, 255, 255);
+    background-color: #6fcee8c5;
+    color: rgb(255, 255, 255);
+    border: 2px solid #feffff; /* Green */
+    margin-top: 38%;
+    margin-inline: 18%;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    z-index: 3;
+    transition: 0.2s all;
+  
+
+}
+#pinkBtn{
+    position: absolute;
+    box-shadow: -3px 3px 5px rgb(255, 255, 255);
+    background-color:#fb71e6c5 ;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff; /* Green */
+    margin-top: 38%;
+    margin-inline: 77%;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    z-index: 3;
+    transition: 0.2s all;
+  
+
+}
+#pinkBtn:active{
+    background-color: transparent;
+
+    box-shadow:  -2px 0 10px rgb(102, 102, 102);
+    transform: translate(-4px, 1px);
+}
+#cyanBtn:active{
+    background-color: transparent;
+
+    box-shadow:  -2px 0 10px rgb(102, 102, 102);
+    transform: translate(-4px, 1px);
+}
+
+
+
+.compra{
+    transition: 1s;
+    animation: 1s infinite;
+    animation-name: salto;
+    
+
+
+    
+}
+
+@keyframes salto {
+    50%{
+        transform: scale(1.1);
+    }
+    
+}
+
+
+.prioridad{
+    z-index: 1;
+}
